@@ -10,8 +10,19 @@ class PromptController extends Controller
     public function index()
     {
         try {
-            $prompt = Prompt::all();
-            return response()->json($prompt);
+            $prompts = Prompt::with('user:id,name')->get();
+            $formattedPrompts = $prompts->map(function ($prompt) {
+                return [
+                    'id' => $prompt->id,
+                    'name' => $prompt->name,
+                    'content' => $prompt->content,
+                    'tag_id' => $prompt->tag_id,
+                    'creator' => $prompt->user->name,
+                    'created_at' => $prompt->created_at,
+                    'updated_at' => $prompt->updated_at,
+                ];
+            });
+            return response()->json($formattedPrompts);
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 400);
         }
@@ -20,7 +31,7 @@ class PromptController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'content' => 'required|string|max:255',
+            'content' => 'required|string',
             'tag_id' => 'required|exists:tags,id',
         ]);
 
