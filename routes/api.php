@@ -12,10 +12,7 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/prompt', [PromptController::class, 'index']);
     Route::post('/prompt', [PromptController::class, 'store']);
+    Route::get('/prompt/{prompt:id}', [PromptController::class, 'show']);
 
     Route::get('/tag', [TagController::class, 'index']);
-});
-
-Route::get('/test', function () {
-    return response()->json(['message' => 'Hello World']);
 });

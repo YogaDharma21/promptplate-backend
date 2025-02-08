@@ -43,4 +43,8 @@ class PromptController extends Controller
             return response()->json(['error' => $e->getMessage()], 400);
         }
     }
+    public function show(Prompt $prompt)
+    {
+        return $prompt;
+    }
 }
