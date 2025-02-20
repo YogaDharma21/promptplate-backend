@@ -16,4 +16,5 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::put('/prompt/{prompt:id}', [PromptController::class, 'update']);
 
     Route::get('/tag', [TagController::class, 'index']);
+    Route::get('/tag/{tag:slug}', [TagController::class, 'show']);
 });

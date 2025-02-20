@@ -17,6 +17,7 @@ class PromptController extends Controller
                     'name' => $prompt->name,
                     'content' => $prompt->content,
                     'tag_id' => $prompt->tag_id,
+                    'tag_name' => $prompt->tag->name,
                     'creator' => $prompt->user->name,
                     'user_id' => $prompt->user_id,
                     'created_at' => $prompt->created_at,
