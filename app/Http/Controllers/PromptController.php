@@ -45,6 +45,25 @@ class PromptController extends Controller
     }
     public function show(Prompt $prompt)
     {
-        return $prompt;
+        return $prompt->load('tag');
+    }
+    public function update(Request $request, Prompt $prompt)
+    {
+        if ($request->user()->id !== $prompt->user_id) {
+            return response()->json(['error' => 'Unauthorized'], 403);
+        }
+
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'content' => 'required|string',
+            'tag_id' => 'required|exists:tags,id',
+        ]);
+
+        try {
+            $prompt->update($validatedData);
+            return response()->json(['message' => 'Prompt updated successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 400);
+        }
     }
 }

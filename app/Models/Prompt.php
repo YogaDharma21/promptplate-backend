@@ -15,7 +15,7 @@ class Prompt extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function tags(): BelongsTo
+    public function tag(): BelongsTo
     {
         return $this->belongsTo(Tag::class);
     }

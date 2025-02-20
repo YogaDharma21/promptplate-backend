@@ -13,6 +13,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/prompt', [PromptController::class, 'index']);
     Route::post('/prompt', [PromptController::class, 'store']);
     Route::get('/prompt/{prompt:id}', [PromptController::class, 'show']);
+    Route::put('/prompt/{prompt:id}', [PromptController::class, 'update']);
 
     Route::get('/tag', [TagController::class, 'index']);
 });
