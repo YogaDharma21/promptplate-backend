@@ -1,66 +1,155 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<a id="readme-top"></a>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="public/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## About Laravel
+<h3 align="center">Prompt Plate (backend version)</h3>
+  <p align="center">
+    Work with AI with your command in charge
+    <br />
+    <a href="https://github.com/YogaDharma21/promptplate">View Demo</a>
+    &middot;
+    <a href="https://github.com/YogaDharma21/promptplate/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/YogaDharma21/promptplate/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+      <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<!-- ABOUT THE PROJECT -->
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About The Project
 
-## Learning Laravel
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Crafting the correct prompt for an AI can spell the change in response that one is looking for. Our platform enables users to find suitable and relevant prompts for image creation, content spinning, coding, and any other creative activity and share them with other people. Users can now browse, search, and utilize prompts that have been tested and perfected without wasting their time trying to figure out what works best.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+As important as searching is, sharing equally holds the same level of importance. Users can add their prompts, rate other prompts, and assist in developing a general collection of quality inputs. Whether someone is a novice in need of direction or a professional trying to optimize their AI interactions, our platform allows people to find and share the most relevant and suitable prompts with ease.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Laravel Sponsors
+### Built With
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+[![Next][Next.js]][Next-url] [![Laravel][Laravel.com]][Laravel-url] [![expo][expo.com]][expo-url]
 
-### Premium Partners
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- **PHP:** Ensure you have PHP installed (version 8.1 or later is recommended).
+- **Composer:** Make sure Composer is installed.
+- **Database:** A MySQL, PostgreSQL, or SQLite database is required for development.
+
+### Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/YogaDharma21/promptplate-backend
+    ```
+
+2. **Navigate into the project directory:**
+    ```sh
+    cd promptplate-backend
+    ```
+
+3. **Install PHP dependencies using Composer:**
+    ```sh
+    composer install
+    ```
+
+4. **Copy the example environment file and configure your environment:**
+    ```sh
+    cp .env.example .env
+    ```
+    Then, update the `.env` file with your database credentials and any other required settings.
+
+5. **Generate an application key:**
+    ```sh
+    php artisan key:generate
+    ```
+
+### Running the Project
+
+1. **Run database migrations (if applicable):**
+    ```sh
+    php artisan migrate
+    ```
+
+2. **Start the development server:**
+    ```sh
+    php artisan serve
+    ```
+    The application will be available at [http://localhost:8000](http://localhost:8000).
+
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Code of Conduct
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Distributed under the project_license. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Yoga Dharma - [@yogadharma21\_](https://www.instagram.com/yogadharma21_/) - yogadharmaputra2006@gmail.com
+
+Project Link: [https://github.com/YogaDharma21/promptplate](https://github.com/YogaDharma21/promptplate)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[product-screenshot]: public/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[expo.com]: https://img.shields.io/badge/expo-000000?style=for-the-badge&logo=expo&logoColor=white
+[expo-url]: https://expo.dev
